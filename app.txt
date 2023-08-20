@@ -1,2 +1,7 @@
 Hello World
 Nice to meet you
+
+/*
+1. git add 로 기록할 파일부터 고른다.
+2. git commit 를 사용해 고른 파일을 기록한다.
+*/
