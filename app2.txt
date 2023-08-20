@@ -14,5 +14,11 @@
 // 4. commit 내역 조회 -> git log --all --oneline
 // 5. 브랜치 생성해줌 -> git branch 브랜치명
 // 6. 브랜치로 이동 -> git switch 브랜치명
+// 7. 브랜치 합병 -> git merge 합칠 브랜치명
+// 7-1. Merge Conflict 해결법 
+1. 원하는 코드만 남기고,
+2. git add
+3. git commit
+// 7. HEAD -> 현재 나의 위치
 // 참고 : commit 3초마다 하지 마시고, 기능 하나 구현한 후 커밋 해주셈(그래야 뭔 기능을 추가했는지 알 수 있음)
 
