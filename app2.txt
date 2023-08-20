@@ -1,4 +1,6 @@
-// 0. 최근 commit vs 현재파알 차이점 보여줌 -> git diff
+// 0. 최근 commit vs 현재파알 차이점 보여줌 -> git diff ~~~~> j / k 로 스크롤바 조작 가능 || q 로 종료
+// 0-1. 최근 commit vs 현재파알 차이점 보여줌(시각적으로) ==> 파일이 더 많아지면 사용 
+--> git difftool ~~~~> 마찬가지로, Vim 에디터이기 때문에 h, j, k, i 키가 방향키이고, 종료는 :q 또는 :qa 입니다.
 // 1. 여러 파일 스테이징하려면 -> git add 파일1 파일2... -> 예시) git add app.txt app2.txt
 // 2. 모든 파일 스테이징하려면 -> git add .
 // 3. 상태창 열기 -> git status
