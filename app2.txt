@@ -1,6 +1,13 @@
 // 0. 최근 commit vs 현재파알 차이점 보여줌 -> git diff ~~~~> j / k 로 스크롤바 조작 가능 || q 로 종료
 // 0-1. 최근 commit vs 현재파알 차이점 보여줌(시각적으로) ==> 파일이 더 많아지면 사용 
 --> git difftool ~~~~> 마찬가지로, Vim 에디터이기 때문에 h, j, k, i 키가 방향키이고, 종료는 :q 또는 :qa 입니다.
+~~-> :q 누르면 단계적으로 빠져나오지만, :qa는 한 번에 다 빠져나옵니다.
+// 0-2. 현재 파일 vs 특정커밋 비교가능 --> git difftool 커밋아이디
+--> 커밋아이디 확인 방법 : git log --all --oneline
+// 0-3. 특정 commit vs 특정 commit 비교가능 --> git difftool 커밋아이디1, 커밋아이디2
+// 0-4. difftool 할 때 Vim 에디터 쓰기 싫으면, 
+~~> git config --global diff.tool vscode
+~~> git config --global difftool.vscode.cmd 'code --wait --diff $LOCAL $REMOTE'
 // 1. 여러 파일 스테이징하려면 -> git add 파일1 파일2... -> 예시) git add app.txt app2.txt
 // 2. 모든 파일 스테이징하려면 -> git add .
 // 3. 상태창 열기 -> git status
