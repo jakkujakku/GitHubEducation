@@ -15,3 +15,7 @@ Nice to meet you
     |
 // Repository(저장소)
 */
+
+// 익히면 좋은 팁
+1. commit 전에 파일 차이점 확인하는 것도 좋음...
+2. commit 전에 현재 파일 vs 최근 commit 차이점 확인하는 것도 좋음..
