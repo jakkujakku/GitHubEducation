@@ -12,5 +12,8 @@
 // 2. 모든 파일 스테이징하려면 -> git add .
 // 3. 상태창 열기 -> git status
 // 4. commit 내역 조회 -> git log --all --oneline
+// 5. git branch 강의 내용 정리
+1. 브랜치 합치기는 기준 브랜치 이동 후 git merge 브랜치명
+2. 충돌 해결 방법은 코드 고치고 git add & git commit 
 // 참고 : commit 3초마다 하지 마시고, 기능 하나 구현한 후 커밋 해주셈(그래야 뭔 기능을 추가했는지 알 수 있음)
 
