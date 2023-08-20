@@ -4,4 +4,14 @@ Nice to meet you
 /*
 1. git add 로 기록할 파일부터 고른다.
 2. git commit 를 사용해 고른 파일을 기록한다.
+
+// 작업 폴더 
+(git add)
+    |
+    |
+// Staging area
+(git commit)
+    |
+    |
+// Repository(저장소)
 */
