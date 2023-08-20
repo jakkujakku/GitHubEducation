@@ -1,0 +1,5 @@
+// 1. 여러 파일 스테이징하려면 -> git add 파일1 파일2... -> 예시) git add app.txt app2.txt
+// 2. 모든 파일 스테이징하려면 -> git add .
+// 3. 상태창 열기 -> git status
+// 4. commit 내역 조회 -> git log --all --oneline
+// 참고 : commit 3초마다 하지 마시고, 기능 하나 구현한 후 커밋 해주셈(그래야 뭔 기능을 추가했는지 알 수 있음)
