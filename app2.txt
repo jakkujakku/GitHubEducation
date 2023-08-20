@@ -12,8 +12,31 @@
 // 2. 모든 파일 스테이징하려면 -> git add .
 // 3. 상태창 열기 -> git status
 // 4. commit 내역 조회 -> git log --all --oneline
-// 5. git branch 강의 내용 정리
-1. 브랜치 합치기는 기준 브랜치 이동 후 git merge 브랜치명
-2. 충돌 해결 방법은 코드 고치고 git add & git commit 
+// 5. 브랜치 생성해줌 -> git branch 브랜치명
+// 6. 브랜치로 이동 -> git switch 브랜치명
+// 7. 브랜치 합병 -> git merge 합칠 브랜치명
+// 7-1. Merge Conflict 해결법 
+1. 원하는 코드만 남기고,
+2. git add
+3. git commit
+// 8. 다양한 merge 방법(3-way, fast-forward, squash, rebase)
+// 8-1. 자동으로 fast-forward 실행되는 것이 싫다면, git merge --no-ff 브랜치명 ~~> 참고 : 브랜치 합쳐도 남아있음
+// 8-2. merge 완료된 브랜치 삭제는 --> git branch -d 브랜치명
+// 8-3. merge 안 한 브랜치 삭제는 --> git branch -D 브랜치명
+// 8-4. rebase 쓰는 이유 : 간단하고 짧은 브랜치들은 이거 쓰면 깔끔해보임...(장점) / rebase 단점 : Conflict 엔딩 많이 남..
+// 8-5. git merge 와 git rebase & merge 사용 방식 차이
+1. merge
+1-1. 중심브랜치로 이동
+1-2. git merge 새로운 브랜치명
+
+2. rebase & merge
+2-1. 새로운 브랜치로 이동
+2-2. git rebase 중심 브랜치명
+2-3. 중심 브랜치로 이동
+2-4. git merge 새로운 브랜치명
+
+// 8-6. squash and merge 할려고 한다면 ---> git merge --squash 새브랜치 
+// 7. HEAD -> 현재 나의 위치
+
 // 참고 : commit 3초마다 하지 마시고, 기능 하나 구현한 후 커밋 해주셈(그래야 뭔 기능을 추가했는지 알 수 있음)
 
