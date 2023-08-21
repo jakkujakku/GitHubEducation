@@ -28,6 +28,7 @@ feature/guild_v0.9.0 ----- feature/guild_v0.9.1 --- feature/guild_v0.9.2        
 // 장점 : 소스코드가 한 곳에만 있음
 // 단점 : 많은 테스트를 자주 해야함
 
+// Trunk-based 형태 예시
 feature1                  feature1_v0.0.1 - - - - feature1_v0.0.2 
                               |                        |
 main_v0.0.0 - - - - - - - main_v0.0.1 - - - - - - main_v0.0.2 - - - - - - main_v0.0.3 - - - - main_v0.0.4
