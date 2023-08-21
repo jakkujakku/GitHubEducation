@@ -1,3 +1,4 @@
+// 깃 명령어 정리
 // 0. 최근 commit vs 현재파일 차이점 보여줌 -> git diff ~~~~> j / k 로 스크롤바 조작 가능 || q 로 종료
 // 0-1. 최근 commit vs 현재파일 차이점 보여줌(시각적으로) ==> 파일이 더 많아지면 사용 
 --> git difftool ~~~~> 마찬가지로, Vim 에디터이기 때문에 h, j, k, i 키가 방향키이고, 종료는 :q 또는 :qa 입니다.
@@ -8,17 +9,26 @@
 // 0-4. difftool 할 때 Vim 에디터 쓰기 싫으면, 
 ~~> git config --global diff.tool vscode
 ~~> git config --global difftool.vscode.cmd 'code --wait --diff $LOCAL $REMOTE'
+
 // 1. 여러 파일 스테이징하려면 -> git add 파일1 파일2... -> 예시) git add app.txt app2.txt
+
 // 2. 모든 파일 스테이징하려면 -> git add .
+// 2-1. 선택적으로 파일을 스테이징하려면 -> git add -p
+
 // 3. 상태창 열기 -> git status
+
 // 4. commit 내역 조회 -> git log --all --oneline
+
 // 5. 브랜치 생성해줌 -> git branch 브랜치명
+
 // 6. 브랜치로 이동 -> git switch 브랜치명
+
 // 7. 브랜치 합병 -> git merge 합칠 브랜치명
 // 7-1. Merge Conflict 해결법 
 1. 원하는 코드만 남기고,
 2. git add
 3. git commit
+
 // 8. 다양한 merge 방법(3-way, fast-forward, squash, rebase)
 // 8-1. 자동으로 fast-forward 실행되는 것이 싫다면, git merge --no-ff 브랜치명 ~~> 참고 : 브랜치 합쳐도 남아있음
 // 8-2. merge 완료된 브랜치 삭제는 --> git branch -d 브랜치명
@@ -36,9 +46,11 @@
 2-4. git merge 새로운 브랜치명
 
 // 8-6. squash and merge 할려고 한다면 ---> git merge --squash 새브랜치
+
 // 9. 파일 복구하는 법 -> git restore 파일명 
 // 9-1. 특정 시점으로 restore 하겠다? --> git restore --source 커밋아이디 파일명
 // 9-2. staging 취소도 가능 --> git restore --staged 파일명
+
 // 10. commit 취소하는 법 --> git revert 커밋아이디
 // 10-1. commit 여러 개 취소 가능 --> git revert 커밋아이디1 커밋아이디2
 // 10-2. 최근 commit 취소 가능 --> git revert HEAD
@@ -46,7 +58,36 @@
 // 10-4. 과거로 모든 것을 되돌리기 --> git reset --hard 커밋아이디 ~~> (주의) 협업시엔 사용금지..
 // 10-5. 리셋인데 변동사항 지우지 말고 스테이징 해놓기 --> git reset --soft 커밋아이디
 // 10-6. 리셋인데 변동사항 지우지 말고 unstage 해놓기(자동으로 발동) --> git reset --mixed 커밋아이디
-// 9. HEAD -> 현재 나의 위치
 
-// 참고 : commit 3초마다 하지 마시고, 기능 하나 구현한 후 커밋 해주셈(그래야 뭔 기능을 추가했는지 알 수 있음)
+// 11. 코드를 잠깐 잘라서 보관하고 싶다면 --> git stash
+(그래서 파일들이 최근 commit 상태로 되돌아갑니다.)
+// 11-1. staging 된 것이든 안된 것이든 추적중인 파일은 다 이동됩니다.
+// 11-2. 새로 만든 파일인데 staging 안되었다면 이동안됩니다. 
+
+// 12. git stash 할 때 메모도 함께 입력가능 -> git stash save "메모 내용 작성"
+
+// 13. 현재 stash 되어 있는 코드 목록을 전부 출력해주는 명령어 --> git stash list
+
+// 14. 보관했던 코드 다시 불러오기 --> git stash pop 
+- 잠깐 보관했던 코드를 다시 불러옵니다. 
+- git stash 했던 코드가 여러개 있으면 가장 최근에 보관했던 코드부터 먼저 불러옵니다. 
+
+// 15. 특정 stash 삭제 --> git stash drop 삭제할 id ~~> 삭제할 id는 git stash list 하면 보이는 0, 1, 2 
+
+// 16. 모든 stash 삭제 --> git stash clear
+
+// 17. 전체 말고 일부 코드만 git stash 하고 싶으면 --> git stash -p
+
+// 18. 주석 치는 방법과 stash 방법의 차이점
+- 주석 : 주석 처리된 코드는 commit할 때 반영됨. 그래서 기록이 더러워질 수 있음.
+- stash : 주석처리한 내용을 commit 해버리기 싫을 때 git stash 쓰면 유용함(commit x)
+- 기능 A, B를 만들어야하는데
+기능A는 완성되었고 기능B는 반쯤 완성된 경우 
+팀장이 "기능A 부분만 빨리 commit하고 merge 하라"고 하면
+그럴 때 기능B를  git stash 사용하는 것이 유용함.
+
+// 참고-1. 브랜치 새로 만들어서 거기다 코드짜놓는거랑 다를바 없는데요?
+- 간단히 브랜치만들어서 거기 보관하는 것도 나쁘지않습니다. 
+// 참고-2. HEAD -> 현재 나의 위치
+// 참고-3. commit 3초마다 하지 마시고, 기능 하나 구현한 후 커밋 해주셈(그래야 뭔 기능을 추가했는지 알 수 있음)
 

@@ -1,6 +1,4 @@
-Hello World
-Nice to meet you
-
+// 깃허브 튜토리얼 
 /*
 1. git add 로 기록할 파일부터 고른다.
 2. git commit 를 사용해 고른 파일을 기록한다.
@@ -25,6 +23,7 @@ Nice to meet you
 // 온라인 Repository 만들면  
 1. 컴퓨터 고장나도 안심
 2. 협업 가능
+
 // github.com은 기본브랜치 이름을 main으로 강요함
 // git branch -M main ---> 기본 브런치 이름을 main 으로 변경해줌.
 // 로컬 -> 원격 저장소 업로드는 git push -u 원격저장소주소 올릴 로컬 브랜치명
@@ -43,4 +42,5 @@ Nice to meet you
 // 원격저장소 브랜치 merge 하고 싶으면?
 - github 안에서 하거나
 - 로컬에서 해서 push 하거나 
+
 // 핵심 -> git push 전에 git pull 부터 하자.
