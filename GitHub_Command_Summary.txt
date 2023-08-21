@@ -38,7 +38,6 @@
 // 8-6. squash and merge 할려고 한다면 ---> git merge --squash 새브랜치
 // 9. 파일 복구하는 법 -> git restore 파일명 
 // 9-1. 특정 시점으로 restore 하겠다? --> git restore --source 커밋아이디 파일명
-// 10. 파일 새 수정하겠음...
 // 9. HEAD -> 현재 나의 위치
 
 // 참고 : commit 3초마다 하지 마시고, 기능 하나 구현한 후 커밋 해주셈(그래야 뭔 기능을 추가했는지 알 수 있음)
