@@ -40,4 +40,7 @@ Nice to meet you
 // git pll -> git fetch + git merge
 1. git fetch : 원격저장소 신규 commit 가져오세요.
 2. git merge : 내 브랜치에 merge(=합치기)~~>(Conflict 발생 가능)
+// 원격저장소 브랜치 merge 하고 싶으면?
+- github 안에서 하거나
+- 로컬에서 해서 push 하거나 
 // 핵심 -> git push 전에 git pull 부터 하자.
