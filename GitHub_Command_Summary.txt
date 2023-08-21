@@ -40,6 +40,12 @@
 // 9-1. 특정 시점으로 restore 하겠다? --> git restore --source 커밋아이디 파일명
 // 9-2. staging 취소도 가능 --> git restore --staged 파일명
 // 10. commit 취소하는 법 --> git revert 커밋아이디
+// 10-1. commit 여러 개 취소 가능 --> git revert 커밋아이디1 커밋아이디2
+// 10-2. 최근 commit 취소 가능 --> git revert HEAD
+// 10-3. merge commit도 취소가능
+// 10-4. 과거로 모든 것을 되돌리기 --> git reset --hard 커밋아이디 ~~> (주의) 협업시엔 사용금지..
+// 10-5. 리셋인데 변동사항 지우지 말고 스테이징 해놓기 --> git reset --soft 커밋아이디
+// 10-6. 리셋인데 변동사항 지우지 말고 unstage 해놓기(자동으로 발동) --> git reset --mixed 커밋아이디
 // 9. HEAD -> 현재 나의 위치
 
 // 참고 : commit 3초마다 하지 마시고, 기능 하나 구현한 후 커밋 해주셈(그래야 뭔 기능을 추가했는지 알 수 있음)
