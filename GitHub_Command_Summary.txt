@@ -37,6 +37,7 @@
 
 // 8-6. squash and merge 할려고 한다면 ---> git merge --squash 새브랜치
 // 9. 파일 복구하는 법 -> git restore 파일명 
+// 9-1. 특정 시점으로 restore 하겠다? --> git restore --source 커밋아이디 파일명
 // 10. 파일 새 수정하겠음...
 // 9. HEAD -> 현재 나의 위치
 
