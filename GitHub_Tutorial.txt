@@ -19,3 +19,17 @@ Nice to meet you
 // 익히면 좋은 팁
 1. commit 전에 파일 차이점 확인하는 것도 좋음...
 2. commit 전에 현재 파일 vs 최근 commit 차이점 확인하는 것도 좋음..
+
+// git --> 파일 버전 기록해주는 프로그램
+// Repository -> git이 파일 기록해두는 장소
+// 온라인 Repository 만들면  
+1. 컴퓨터 고장나도 안심
+2. 협업 가능
+// github.com은 기본브랜치 이름을 main으로 강요함
+// git branch -M main ---> 기본 브런치 이름을 main 으로 변경해줌.
+// 로컬 -> 원격 저장소 업로드는 git push -u 원격저장소주소 올릴 로컬 브랜치명
+// git에서 변수 문법 사용 가능 --> 예시) git remote add origin 원격 저장소 주소 ~~> origin 이라는 변수에 깃 원격 저장소 주소를 할당함.
+// 변수목록을 확인하고 싶다면 --> git remote -v
+// git push 할 때, -u  추가하면 방금 입력한 주소 기억하라는 뜻 --> 예시) git push -u origin main
+// 원격저장소에 있던거 그대로 내려받기 --> git clone https://원격저장소주소
+// 저장소에 올리지 않는 파일들은 --> .gitignore
