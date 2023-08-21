@@ -33,3 +33,11 @@ Nice to meet you
 // git push 할 때, -u  추가하면 방금 입력한 주소 기억하라는 뜻 --> 예시) git push -u origin main
 // 원격저장소에 있던거 그대로 내려받기 --> git clone https://원격저장소주소
 // 저장소에 올리지 않는 파일들은 --> .gitignore
+// 원격저장소에 새로운게 생기면 git push 못함.
+// 원격저장소 최신 내용이 로컬저장소에 있을 때만 git push 가능
+// 원격저장소 -> 로컬저장소 ~~> git pull 원격저장소주소 브랜치명
+// git pull 할 때 브랜치 명시 가능
+// git pll -> git fetch + git merge
+1. git fetch : 원격저장소 신규 commit 가져오세요.
+2. git merge : 내 브랜치에 merge(=합치기)~~>(Conflict 발생 가능)
+// 핵심 -> git push 전에 git pull 부터 하자.
